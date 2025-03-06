@@ -7,7 +7,7 @@ import { Bell, Database, Moon, Shield, User } from "lucide-react";
 export default function Settings() {
   return (
     <div className="container py-10 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-2">Settings</h1>
+      <h1 className="text-3xl font-bold mb-2">Settings 1</h1>
       <p className="text-muted-foreground mb-6">Manage your preferences and account settings</p>
       
       <div className="space-y-8">

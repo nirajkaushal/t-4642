@@ -62,7 +62,7 @@ export function Sidebar({ onCategorySelect, selectedCategory }: SidebarProps) {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton
-                  active={!selectedCategory}
+                  isActive={!selectedCategory}
                   onClick={() => onCategorySelect(null)}
                 >
                   <Inbox className="h-4 w-4 text-primary" />
@@ -90,7 +90,7 @@ export function Sidebar({ onCategorySelect, selectedCategory }: SidebarProps) {
               {categories.map((category) => (
                 <SidebarMenuItem key={category.id}>
                   <SidebarMenuButton
-                    active={selectedCategory === category.id}
+                    isActive={selectedCategory === category.id}
                     onClick={() => onCategorySelect(category.id)}
                   >
                     {getIconForCategory(category)}
